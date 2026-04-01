@@ -1,0 +1,122 @@
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// -----------------------------------------------------------------------------
+// Skills — cards + hover overlay
+// -----------------------------------------------------------------------------
+
+.skills {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: clamp(3rem, 8vw, 5rem) clamp(1.25rem, 4vw, 3rem) clamp(4rem, 10vw, 6rem);
+  border-top: 1px solid rgba($color-text, 0.06);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.85) inset;
+}
+
+.skills__head {
+  margin-bottom: clamp(1.75rem, 4vw, 2.5rem);
+}
+
+.skills__title {
+  margin: 0 0 0.35em;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: $font-weight-extrabold;
+  letter-spacing: -0.03em;
+  color: $color-text;
+}
+
+.skills__desc {
+  margin: 0;
+  max-width: 40ch;
+  font-size: 0.9375rem;
+  color: $color-text-muted;
+}
+
+.skills__grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr;
+
+  @include from-sm {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include desktop {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.skill-card {
+  position: relative;
+  min-height: 8.5rem;
+  padding: 1.25rem 1.35rem;
+  border: 1px solid rgba($color-text, 0.08);
+  border-radius: 0.75rem;
+  background: $color-bg;
+  overflow: hidden;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+
+  &:hover,
+  &:focus-within {
+    border-color: rgba($color-primary, 0.35);
+    box-shadow: 0 12px 40px rgba(0, 71, 255, 0.08);
+  }
+}
+
+.skill-card__name {
+  margin: 0 0 0.25rem;
+  font-size: 1.125rem;
+  font-weight: $font-weight-extrabold;
+  letter-spacing: -0.02em;
+  color: $color-text;
+}
+
+.skill-card__hint {
+  margin: 0;
+  font-size: 0.8125rem;
+  color: $color-text-muted;
+}
+
+.skill-card__overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
+  background: linear-gradient(
+    145deg,
+    rgba(0, 71, 255, 0.94) 0%,
+    rgba(0, 40, 180, 0.96) 100%
+  );
+  color: #fff;
+  font-size: 0.9375rem;
+  font-weight: $font-weight-medium;
+  line-height: 1.5;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  pointer-events: none;
+}
+
+.skill-card:hover .skill-card__overlay,
+.skill-card:focus-within .skill-card__overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skill-card__overlay {
+    transition: opacity 0.2s ease;
+    transform: none;
+  }
+
+  .skill-card:hover .skill-card__overlay,
+  .skill-card:focus-within .skill-card__overlay {
+    transform: none;
+  }
+}

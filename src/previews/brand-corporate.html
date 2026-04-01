@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brand Corporate — Preview</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        font-family: Georgia, 'Times New Roman', serif;
+        color: #1c1917;
+      }
+      .bar {
+        height: 4px;
+        background: #0047ff;
+      }
+      .wrap {
+        max-width: 1100px;
+        margin: 0 auto;
+        padding: clamp(1rem, 3vw, 2rem);
+      }
+      .row {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      @media (min-width: 768px) {
+        .row {
+          flex-direction: row;
+          align-items: center;
+        }
+        .row .col {
+          flex: 1;
+        }
+      }
+      h1 {
+        font-size: clamp(1.35rem, 3vw, 2rem);
+        margin-bottom: 0.5rem;
+      }
+      .lead {
+        color: #57534e;
+        font-size: 0.95rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bar"></div>
+    <div class="wrap">
+      <div class="row">
+        <div class="col">
+          <h1>기업 브랜드 아이덴티티</h1>
+          <p class="lead">Tablet 이상에서 이미지·텍스트가 가로 배치됩니다.</p>
+        </div>
+        <div class="col">
+          <p class="lead">Desktop 1200px 프레임에서 여백과 타이포가 균형을 잡습니다.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

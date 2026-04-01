@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// Colors & typography — 모던 미니멀 테마
+// -----------------------------------------------------------------------------
+
+$color-bg: #ffffff;
+$color-text: #111111;
+$color-text-muted: #6b7280;
+$color-primary: #0047ff;
+
+$font-family-base: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  system-ui, sans-serif;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-extrabold: 800;
+
+// 반응형 중단점 (min-width, mobile-first)
+$bp-sm: 480px;
+$bp-md: 768px;
+$bp-lg: 1024px;
+$bp-xl: 1280px;

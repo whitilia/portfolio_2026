@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard — Preview</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        font-family: ui-monospace, monospace;
+        font-size: 0.8rem;
+        background: #0b1120;
+        color: #e2e8f0;
+      }
+      .top {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 0.75rem 1rem;
+        background: #111827;
+        border-bottom: 1px solid #1f2937;
+      }
+      .pill {
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        background: #1f2937;
+      }
+      .dash {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+        padding: 1rem;
+      }
+      @media (min-width: 768px) {
+        .dash {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (min-width: 1200px) {
+        .dash {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+      .widget {
+        background: #111827;
+        border: 1px solid #1f2937;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        min-height: 88px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="top">
+      <span class="pill">dashboard</span>
+      <span class="pill">live</span>
+      <span class="pill">v1.0</span>
+    </header>
+    <main class="dash">
+      <div class="widget">KPI A</div>
+      <div class="widget">KPI B</div>
+      <div class="widget">KPI C</div>
+      <div class="widget">KPI D</div>
+    </main>
+  </body>
+</html>
