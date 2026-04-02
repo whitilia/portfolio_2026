@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Commerce Shop — Preview</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        font-family: system-ui, sans-serif;
+        background: #fafafa;
+        color: #111;
+      }
+      .nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+        padding: 0.75rem 1rem;
+        background: #fff;
+        border-bottom: 1px solid #eee;
+        font-size: 0.8rem;
+      }
+      .nav span {
+        padding: 0.25rem 0.5rem;
+        background: #f4f4f5;
+        border-radius: 0.25rem;
+      }
+      .products {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.75rem;
+        padding: 1rem;
+      }
+      @media (min-width: 768px) {
+        .products {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media (min-width: 1200px) {
+        .products {
+          grid-template-columns: repeat(4, 1fr);
+        }
+      }
+      .p {
+        background: #fff;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        border: 1px solid #e5e5e5;
+        min-height: 120px;
+      }
+      .p strong {
+        display: block;
+        margin-bottom: 0.35rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="nav" aria-label="데모 카테고리">
+      <span>전체</span>
+      <span>신상</span>
+      <span>세일</span>
+    </nav>
+    <div class="products">
+      <div class="p"><strong>상품 A</strong>375px · 2열</div>
+      <div class="p"><strong>상품 B</strong>768px · 3열</div>
+      <div class="p"><strong>상품 C</strong>1200px · 4열</div>
+      <div class="p"><strong>상품 D</strong>그리드 전환</div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publisher Portfolio</title>
+    <link
+      rel="stylesheet"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css"
+    />
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="site">
+      <header class="site-header">
+        <div class="site-header__inner">
+          <nav class="site-header__nav" aria-label="주요 섹션">
+            <a class="logo" href="#hero">PORTFOLIO</a>
+            <a class="site-header__link" href="#hero">Hero</a>
+            <a class="site-header__link" href="#skills">Skills</a>
+            <a class="site-header__link" href="#projects">Projects</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="site-main">
+        <section class="hero" id="hero" aria-labelledby="hero-title">
+          <div class="hero__spotlight" aria-hidden="true"></div>
+          <div class="hero__inner">
+            <p class="hero__label js-reveal">Web Publisher</p>
+            <h1 id="hero-title" class="hero__title js-reveal">Detail-Oriented Publisher</h1>
+            <p class="hero__lead js-reveal">
+              마크업과 스타일의 디테일을 기준으로, 브라우저와 사용자 모두에게 일관된 경험을
+              만듭니다.
+            </p>
+          </div>
+          <div class="hero__scroll js-reveal" aria-hidden="true">
+            <span class="hero__scroll-mouse"></span>
+            <span class="hero__scroll-text">Scroll</span>
+          </div>
+        </section>
+
+        <section class="skills" id="skills" aria-labelledby="skills-title">
+          <div class="skills__head" data-scroll-block>
+            <h2 id="skills-title" class="skills__title js-reveal">Skills</h2>
+            <p class="skills__desc js-reveal">퍼블리싱과 빌드에 사용하는 핵심 스택입니다.</p>
+          </div>
+          <ul class="skills__grid" data-scroll-block>
+            <li>
+              <article class="skill-card js-reveal" tabindex="0">
+                <h3 class="skill-card__name">HTML5</h3>
+                <p class="skill-card__hint">시맨틱 마크업</p>
+                <div class="skill-card__overlay">
+                  시맨틱 구조 · 접근성(A11y) 준수 · 크로스 브라우징 100%
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="skill-card js-reveal" tabindex="0">
+                <h3 class="skill-card__name">CSS3 · SCSS</h3>
+                <p class="skill-card__hint">유지보수 스타일</p>
+                <div class="skill-card__overlay">
+                  BEM 방법론 준수 · 변수·믹스인으로 모듈화 · 반응형 레이아웃
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="skill-card js-reveal" tabindex="0">
+                <h3 class="skill-card__name">JavaScript · ES6+</h3>
+                <p class="skill-card__hint">인터랙션</p>
+                <div class="skill-card__overlay">
+                  ES6+ 문법 · 모듈 구조 · DOM·이벤트 기반 UI 동작
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="skill-card js-reveal" tabindex="0">
+                <h3 class="skill-card__name">jQuery</h3>
+                <p class="skill-card__hint">호환·연동</p>
+                <div class="skill-card__overlay">
+                  크로스 브라우징 대응 DOM · 플러그인·레거시 코드 연동
+                </div>
+              </article>
+            </li>
+            <li>
+              <article class="skill-card js-reveal" tabindex="0">
+                <h3 class="skill-card__name">Gulp</h3>
+                <p class="skill-card__hint">자동 빌드</p>
+                <div class="skill-card__overlay">
+                  SCSS 컴파일 · Autoprefixer · 산출물 배포까지 한 번에
+                </div>
+              </article>
+            </li>
+          </ul>
+        </section>
+
+        <section class="projects" id="projects" aria-labelledby="projects-title">
+          <div class="projects__intro" data-scroll-block>
+            <div>
+              <p class="projects__kicker js-reveal">Selected work</p>
+              <h2 id="projects-title" class="projects__title js-reveal">Projects</h2>
+              <p class="projects__lead js-reveal">
+                퍼블리싱과 협업으로 완성한 프로젝트입니다. 카드를 선택하면 상세 모달에서
+                <strong>Desktop · Tablet · Mobile</strong> 너비로 라이브 미리보기를
+                확인할 수 있습니다.
+              </p>
+            </div>
+            <div class="projects__stats" aria-hidden="true">
+              <div class="projects__stat js-reveal">
+                <span class="projects__stat-value">6+</span>
+                <span class="projects__stat-label">대표 프로젝트</span>
+              </div>
+              <div class="projects__stat js-reveal">
+                <span class="projects__stat-value">100%</span>
+                <span class="projects__stat-label">시맨틱 마크업</span>
+              </div>
+              <div class="projects__stat js-reveal">
+                <span class="projects__stat-value">A11y</span>
+                <span class="projects__stat-label">접근성 고려</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__grid" data-scroll-block>
+            <div class="projects__grid-item projects__grid-item--wide">
+              <button
+                type="button"
+                class="project-card project-card--featured js-reveal"
+                data-preview-src="previews/landing-fintech.html"
+                data-project-title="FinTech · 신뢰 랜딩"
+                data-project-url="previews/landing-fintech.html"
+              >
+                <div class="project-card__mockup">
+                  <div class="mockup mockup--laptop" aria-hidden="true">
+                    <div class="mockup__frame">
+                      <div class="mockup__camera"></div>
+                      <div
+                        class="mockup__screen"
+                        style="--mockup-accent: #0047ff"
+                      >
+                        <div class="mockup__screen-inner">
+                          <span class="mockup__screen-badge">Featured</span>
+                          <p class="mockup__screen-title">FinTech Landing</p>
+                          <p class="mockup__screen-meta">Responsive · A11y</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mockup__base"></div>
+                  </div>
+                </div>
+                <div class="project-card__body">
+                  <div class="project-card__top">
+                    <span class="project-card__cat">Finance · Landing</span>
+                    <span class="project-card__year">2025</span>
+                  </div>
+                  <h3 class="project-card__name">FinTech · 신뢰를 디자인하는 랜딩</h3>
+                  <p class="project-card__desc">
+                    금융 브랜드 톤에 맞춘 히어로·CTA·그리드 섹션. 스크롤 인터랙션과
+                    폼 접근성을 함께 정리했습니다.
+                  </p>
+                  <ul class="project-card__tags">
+                    <li class="project-card__tag">HTML5</li>
+                    <li class="project-card__tag">SCSS</li>
+                    <li class="project-card__tag">ES6</li>
+                    <li class="project-card__tag">Gulp</li>
+                  </ul>
+                  <div class="project-card__contrib-head">
+                    <span class="project-card__contrib-label">작업 기여도</span>
+                    <span class="project-card__contrib-note">퍼블리싱 전담</span>
+                  </div>
+                  <div class="contrib-rows" role="group" aria-label="작업 기여도">
+                    <div class="contrib-row">
+                      <span class="contrib-row__label">마크업</span>
+                      <div class="contrib-row__track">
+                        <div class="contrib-row__fill" style="width: 100%"></div>
+                      </div>
+                      <span class="contrib-row__pct">100%</span>
+                    </div>
+                    <div class="contrib-row">
+                      <span class="contrib-row__label">스타일</span>
+                      <div class="contrib-row__track">
+                        <div class="contrib-row__fill" style="width: 100%"></div>
+                      </div>
+                      <span class="contrib-row__pct">100%</span>
+                    </div>
+                    <div class="contrib-row">
+                      <span class="contrib-row__label">인터랙션</span>
+                      <div class="contrib-row__track">
+                        <div class="contrib-row__fill" style="width: 85%"></div>
+                      </div>
+                      <span class="contrib-row__pct">85%</span>
+                    </div>
+                  </div>
+                  <span class="project-card__cta">
+                    <span>상세 보기 · 반응형 시뮬레이터</span>
+                    <span class="project-card__cta-icon" aria-hidden="true">↗</span>
+                  </span>
+                </div>
+              </button>
+            </div>
+
+            <div class="projects__grid-item">
+              <button
+                type="button"
+                class="project-card js-reveal"
+                data-preview-src="previews/brand-corporate.html"
+                data-project-title="기업 브랜드 리뉴얼"
+                data-project-url="previews/brand-corporate.html"
+              >
+                <div class="project-card__mockup">
+                  <div class="mockup mockup--laptop" aria-hidden="true">
+                    <div class="mockup__frame">
+                      <div class="mockup__camera"></div>
+                      <div
+                        class="mockup__screen"
+                        style="--mockup-accent: #0f766e"
+                      >
+                        <div class="mockup__screen-inner">
+                          <span class="mockup__screen-badge">Corporate</span>
+                          <p class="mockup__screen-title">Brand Site</p>
+                          <p class="mockup__screen-meta">Identity · Editorial</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mockup__base"></div>
+                  </div>
+                </div>
+                <div class="project-card__body">
+                  <div class="project-card__top">
+                    <span class="project-card__cat">Corporate</span>
+                    <span class="project-card__year">2024</span>
+                  </div>
+                  <h3 class="project-card__name">글로벌 리빙 브랜드 사이트</h3>
+                  <p class="project-card__desc">
+                    글·이미지 레이아웃을 중심으로 한 에디토리얼 그리드. 다국어 타이포
+                    스케일을 정리했습니다.
+                  </p>
+                  <ul class="project-card__tags">
+                    <li class="project-card__tag">HTML5</li>
+                    <li class="project-card__tag">SCSS</li>
+                    <li class="project-card__tag">jQuery</li>
+                  </ul>
+                  <div class="project-card__contrib-head">
+                    <span class="project-card__contrib-label">작업 기여도</span>
+                    <span class="project-card__contrib-note">퍼블리싱 90%</span>
+                  </div>
+                  <div class="contrib-rows" aria-label="작업 기여도">
+                    <div class="contrib-row">
+                      <span class="contrib-row__label">마크업</span>
+                      <div class="contrib-row__track">
+                        <div class="contrib-row__fill" style="width: 100%"></div>
+                      </div>
+                      <span class="contrib-row__pct">100%</span>
+                    </div>
+                    <div class="contrib-row">
+                      <span class="contrib-row__label">스타일</span>
+                      <div class="contrib-row__track">
+                        <div class="contrib-row__fill" style="width: 95%"></div>
+                      </div>
+                      <span class="contrib-row__pct">95%</span>
+                    </div>
+                    <div class="contrib-row">
+                      <span class="contrib-row__label">스크립트</span>
+                      <div class="contrib-row__track">
+                        <div class="contrib-row__fill" style="width: 60%"></div>
+                      </div>
+                      <span class="contrib-row__pct">60%</span>
+                    </div>
+                  </div>
+                  <span class="project-card__cta">
+                    <span>상세 보기 · 반응형 시뮬레이터</span>
+                    <span class="project-card__cta-icon" aria-hidden="true">↗</span>
+                  </span>
+                </div>
+              </button>
+            </div>
+
+            <div class="projects__grid-item">
+              <button
+                type="button"
+                class="project-card js-reveal"
+                data-preview-src="previews/shop-responsive.html"
+                data-project-title="커머스 · 반응형 리스트"
+                data-project-url="previews/shop-responsive.html"
+              >
+                <div class="project-card__mockup">
+                  <div class="mockup mockup--laptop" aria-hidden="true">
+                    <div class="mockup__frame">
+                      <div class="mockup__camera"></div>
+                      <div
+                        class="mockup__screen"
+                        style="--mockup-accent: #dc2626"
+                      >
+                        <div class="mockup__screen-inner">
+                          <span class="mockup__screen-badge">Commerce</span>
+                          <p class="mockup__screen-title">Shop Grid</p>
+                          <p class="mockup__screen-meta">2–4 columns</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mockup__base"></div>
+                  </div>
+                </div>
+                <div class="project-card__body">
+                  <div class="project-card__top">
+                    <span class="project-card__cat">E-commerce</span>
+                    <span class="project-card__year">2025</span>
+                  </div>
+                  <h3 class="project-card__name">패션 커머스 · PLP · PDP</h3>
+                  <p class="project-card__desc">
+                    상품 그리드·필터·카드 컴포넌트를 BEM으로 쪼개고, 모듈 스타일로
+                    유지보수 가능하게 구성했습니다.
+                  </p>
+                  <ul class="project-card__tags">
+                    <li class="project-card__tag">HTML5</li>
+                    <li class="project-card__tag">SCSS</li>
+                    <li class="project-card__tag">ES6</li>
+                  </ul>
+                  <div class="project-card__contrib-head">
+                    <span class="project-card__contrib-label">작업 기여도</span>
+                    <span class="project-card__contrib-note">퍼블리싱 전담</span>
+                  </div>
+                  <div class="contrib-rows" aria-label="작업 기여도">
+                    <div class="contrib-row">
+                      <span class="contrib-row__label">마크업</span>
+                      <div class="contrib-row__track">
+                        <div class="contrib-row__fill" style="width: 100%"></div>
+                      </div>
+                      <span class="contrib-row__pct">100%</span>
+                    </div>
+                    <div class="contrib-row">
+                      <span class="contrib-row__label">스타일</span>
+                      <div class="contrib-row__track">
+                        <div class="contrib-row__fill" style="width: 100%"></div>
+                      </div>
+                      <span class="contrib-row__pct">100%</span>
+                    </div>
+                    <div class="contrib-row">
+                      <span class="contrib-row__label">협업</span>
+                      <div class="contrib-row__track">
+                        <div class="contrib-row__fill" style="width: 40%"></div>
+                      </div>
+                      <span class="contrib-row__pct">40%</span>
+                    </div>
+                  </div>
+                  <span class="project-card__cta">
+                    <span>상세 보기 · 반응형 시뮬레이터</span>
+                    <span class="project-card__cta-icon" aria-hidden="true">↗</span>
+                  </span>
+                </div>
+              </button>
+            </div>
+
+            <div class="projects__grid-item">
+              <button
+                type="button"
+                class="project-card js-reveal"
+                data-preview-src="previews/edu-platform.html"
+                data-project-title="에듀 · 학습 플랫폼"
+                data-project-url="previews/edu-platform.html"
+              >
+                <div class="project-card__mockup">
+                  <div class="mockup mockup--laptop" aria-hidden="true">
+                    <div class="mockup__frame">
+                      <div class="mockup__camera"></div>
+                      <div
+                        class="mockup__screen"
+                        style="--mockup-accent: #7c3aed"
+                      >
+                        <div class="mockup__screen-inner">
+                          <span class="mockup__screen-badge">Edu</span>
+                          <p class="mockup__screen-title">Learn Hub</p>
+                          <p class="mockup__screen-meta">Sidebar layout</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mockup__base"></div>
+                  </div>
+                </div>
+                <div class="project-card__body">
+                  <div class="project-card__top">
+                    <span class="project-card__cat">Education</span>
+                    <span class="project-card__year">2024</span>
+                  </div>
+                  <h3 class="project-card__name">학습 대시보드 · 레이아웃 전환</h3>
+                  <p class="project-card__desc">
+                    사이드바·콘텐츠 영역의 브레이크포인트별 재배치, 키보드 포커스
+                    순서를 맞춰 두었습니다.
+                  </p>
+                  <ul class="project-card__tags">
+                    <li class="project-card__tag">HTML5</li>
+                    <li class="project-card__tag">SCSS</li>
+                    <li class="project-card__tag">A11y</li>
+                  </ul>
+                  <div class="project-card__contrib-head">
+                    <span class="project-card__contrib-label">작업 기여도</span>
+                    <span class="project-card__contrib-note">퍼블리싱 95%</span>
+                  </div>
+                  <div class="contrib-rows" aria-label="작업 기여도">
+                    <div class="contrib-row">
+                      <span class="contrib-row__label">마크업</span>
+                      <div class="contrib-row__track">
+                        <div class="contrib-row__fill" style="width: 100%"></div>
+                      </div>
+                      <span class="contrib-row__pct">100%</span>
+                    </div>
+                    <div class="contrib-row">
+                      <span class="contrib-row__label">스타일</span>
+                      <div class="contrib-row__track">
+                        <div class="contrib-row__fill" style="width: 95%"></div>
+                      </div>
+                      <span class="contrib-row__pct">95%</span>
+                    </div>
+                    <div class="contrib-row">
+                      <span class="contrib-row__label">QA</span>
+                      <div class="contrib-row__track">
+                        <div class="contrib-row__fill" style="width: 70%"></div>
+                      </div>
+                      <span class="contrib-row__pct">70%</span>
+                    </div>
+                  </div>
+                  <span class="project-card__cta">
+                    <span>상세 보기 · 반응형 시뮬레이터</span>
+                    <span class="project-card__cta-icon" aria-hidden="true">↗</span>
+                  </span>
+                </div>
+              </button>
+            </div>
+
+            <div class="projects__grid-item">
+              <button
+                type="button"
+                class="project-card js-reveal"
+                data-preview-src="previews/culture-event.html"
+                data-project-title="문화 · 컬처 이벤트"
+                data-project-url="previews/culture-event.html"
+              >
+                <div class="project-card__mockup">
+                  <div class="mockup mockup--laptop" aria-hidden="true">
+                    <div class="mockup__frame">
+                      <div class="mockup__camera"></div>
+                      <div
+                        class="mockup__screen"
+                        style="--mockup-accent: #a21caf"
+                      >
+                        <div class="mockup__screen-inner">
+                          <span class="mockup__screen-badge">Culture</span>
+                          <p class="mockup__screen-title">Event</p>
+                          <p class="mockup__screen-meta">Tickets · Hero</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mockup__base"></div>
+                  </div>
+                </div>
+                <div class="project-card__body">
+                  <div class="project-card__top">
+                    <span class="project-card__cat">Culture</span>
+                    <span class="project-card__year">2023</span>
+                  </div>
+                  <h3 class="project-card__name">전시·공연 프로모션</h3>
+                  <p class="project-card__desc">
+                    히어로 비주얼·티켓 카드·스폰서 로고 행을 반응형으로 묶었고,
+                    모션은 CSS 중심으로 구성했습니다.
+                  </p>
+                  <ul class="project-card__tags">
+                    <li class="project-card__tag">HTML5</li>
+                    <li class="project-card__tag">SCSS</li>
+                    <li class="project-card__tag">Gulp</li>
+                  </ul>
+                  <div class="project-card__contrib-head">
+                    <span class="project-card__contrib-label">작업 기여도</span>
+                    <span class="project-card__contrib-note">퍼블리싱 전담</span>
+                  </div>
+                  <div class="contrib-rows" aria-label="작업 기여도">
+                    <div class="contrib-row">
+                      <span class="contrib-row__label">마크업</span>
+                      <div class="contrib-row__track">
+                        <div class="contrib-row__fill" style="width: 100%"></div>
+                      </div>
+                      <span class="contrib-row__pct">100%</span>
+                    </div>
+                    <div class="contrib-row">
+                      <span class="contrib-row__label">스타일</span>
+                      <div class="contrib-row__track">
+                        <div class="contrib-row__fill" style="width: 100%"></div>
+                      </div>
+                      <span class="contrib-row__pct">100%</span>
+                    </div>
+                    <div class="contrib-row">
+                      <span class="contrib-row__label">연동</span>
+                      <div class="contrib-row__track">
+                        <div class="contrib-row__fill" style="width: 30%"></div>
+                      </div>
+                      <span class="contrib-row__pct">30%</span>
+                    </div>
+                  </div>
+                  <span class="project-card__cta">
+                    <span>상세 보기 · 반응형 시뮬레이터</span>
+                    <span class="project-card__cta-icon" aria-hidden="true">↗</span>
+                  </span>
+                </div>
+              </button>
+            </div>
+
+            <div class="projects__grid-item">
+              <button
+                type="button"
+                class="project-card js-reveal"
+                data-preview-src="previews/admin-dashboard.html"
+                data-project-title="어드민 · 대시보드"
+                data-project-url="previews/admin-dashboard.html"
+              >
+                <div class="project-card__mockup">
+                  <div class="mockup mockup--laptop" aria-hidden="true">
+                    <div class="mockup__frame">
+                      <div class="mockup__camera"></div>
+                      <div
+                        class="mockup__screen"
+                        style="--mockup-accent: #334155"
+                      >
+                        <div class="mockup__screen-inner">
+                          <span class="mockup__screen-badge">Admin</span>
+                          <p class="mockup__screen-title">Dashboard</p>
+                          <p class="mockup__screen-meta">Widgets · Grid</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="mockup__base"></div>
+                  </div>
+                </div>
+                <div class="project-card__body">
+                  <div class="project-card__top">
+                    <span class="project-card__cat">Dashboard</span>
+                    <span class="project-card__year">2025</span>
+                  </div>
+                  <h3 class="project-card__name">내부 운영 · 대시보드 UI</h3>
+                  <p class="project-card__desc">
+                    위젯 그리드·테이블·상단 바를 컴포넌트 단위로 나누고, 다크 모드
+                    톤에 맞춘 토큰을 적용했습니다.
+                  </p>
+                  <ul class="project-card__tags">
+                    <li class="project-card__tag">HTML5</li>
+                    <li class="project-card__tag">SCSS</li>
+                    <li class="project-card__tag">ES6</li>
+                  </ul>
+                  <div class="project-card__contrib-head">
+                    <span class="project-card__contrib-label">작업 기여도</span>
+                    <span class="project-card__contrib-note">퍼블리싱 90%</span>
+                  </div>
+                  <div class="contrib-rows" aria-label="작업 기여도">
+                    <div class="contrib-row">
+                      <span class="contrib-row__label">마크업</span>
+                      <div class="contrib-row__track">
+                        <div class="contrib-row__fill" style="width: 100%"></div>
+                      </div>
+                      <span class="contrib-row__pct">100%</span>
+                    </div>
+                    <div class="contrib-row">
+                      <span class="contrib-row__label">스타일</span>
+                      <div class="contrib-row__track">
+                        <div class="contrib-row__fill" style="width: 90%"></div>
+                      </div>
+                      <span class="contrib-row__pct">90%</span>
+                    </div>
+                    <div class="contrib-row">
+                      <span class="contrib-row__label">스크립트</span>
+                      <div class="contrib-row__track">
+                        <div class="contrib-row__fill" style="width: 60%"></div>
+                      </div>
+                      <span class="contrib-row__pct">60%</span>
+                    </div>
+                  </div>
+                  <span class="project-card__cta">
+                    <span>상세 보기 · 반응형 시뮬레이터</span>
+                    <span class="project-card__cta-icon" aria-hidden="true">↗</span>
+                  </span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">© Publisher Portfolio</footer>
+    </div>
+
+    <div
+      class="project-modal"
+      id="project-modal"
+      hidden
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="project-modal-title"
+    >
+      <div class="project-modal__backdrop" data-modal-close tabindex="-1"></div>
+      <div class="project-modal__dialog">
+        <div class="project-modal__head">
+          <div class="project-modal__title-wrap">
+            <h2 id="project-modal-title" class="project-modal__title">프로젝트</h2>
+            <p class="project-modal__subtitle" id="project-modal-subtitle"></p>
+          </div>
+          <div
+            class="project-modal__viewport-switcher"
+            role="group"
+            aria-label="미리보기 뷰포트 너비"
+          >
+            <button
+              type="button"
+              class="project-modal__vp-btn is-active"
+              data-viewport-width="1200"
+            >
+              Desktop
+            </button>
+            <button type="button" class="project-modal__vp-btn" data-viewport-width="768">
+              Tablet
+            </button>
+            <button type="button" class="project-modal__vp-btn" data-viewport-width="375">
+              Mobile
+            </button>
+          </div>
+          <button type="button" class="project-modal__close" data-modal-close aria-label="닫기">
+            ×
+          </button>
+        </div>
+        <div class="project-modal__body">
+          <div class="project-modal__chrome" aria-hidden="true">
+            <div class="project-modal__dots">
+              <span class="project-modal__dot"></span>
+              <span class="project-modal__dot"></span>
+              <span class="project-modal__dot"></span>
+            </div>
+            <p class="project-modal__url" id="project-modal-url"></p>
+          </div>
+          <div class="project-modal__viewport-wrap">
+            <div class="project-modal__frame" id="project-modal-frame" style="width: 1200px">
+              <iframe
+                id="project-modal-iframe"
+                class="project-modal__iframe"
+                title="프로젝트 미리보기"
+                sandbox="allow-scripts allow-same-origin"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinTech Landing — Preview</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+      }
+      body {
+        font-family: system-ui, sans-serif;
+        color: #0f172a;
+        line-height: 1.5;
+      }
+      .hero {
+        padding: clamp(1.5rem, 4vw, 3rem);
+        background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+        color: #fff;
+      }
+      .hero h1 {
+        font-size: clamp(1.5rem, 4vw, 2.25rem);
+        margin-bottom: 0.75rem;
+      }
+      .hero p {
+        opacity: 0.9;
+        max-width: 40ch;
+      }
+      .grid {
+        padding: clamp(1rem, 3vw, 2rem);
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+      }
+      @media (min-width: 768px) {
+        .grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (min-width: 1200px) {
+        .grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      .card {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 0.75rem;
+        padding: 1rem;
+      }
+      .card h2 {
+        font-size: 1rem;
+        margin-bottom: 0.35rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <h1>FinTech · 신뢰를 디자인하는 랜딩</h1>
+      <p>768px 이상에서 카드가 2열, 1200px에서 3열로 전환됩니다.</p>
+    </header>
+    <main class="grid">
+      <article class="card">
+        <h2>보안</h2>
+        <p>반응형 그리드 데모</p>
+      </article>
+      <article class="card">
+        <h2>수수료</h2>
+        <p>iframe 너비를 바꿔 확인하세요.</p>
+      </article>
+      <article class="card">
+        <h2>지원</h2>
+        <p>375px에서는 1열입니다.</p>
+      </article>
+    </main>
+  </body>
+</html>

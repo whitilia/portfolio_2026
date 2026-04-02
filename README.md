@@ -26,7 +26,7 @@ npm install
 npm run dev
 ```
 
-`dist/`를 루트로 하는 로컬 서버가 뜨고, 터미널에 표시된 URL(기본적으로 `http://localhost:3000` 등)로 브라우저에서 확인하면 됩니다. `src`의 HTML·JS·이미지·SCSS를 저장하면 반영됩니다.
+`docs/`를 루트로 하는 로컬 서버가 뜨고, 터미널에 표시된 URL(기본적으로 `http://localhost:3000` 등)로 브라우저에서 확인하면 됩니다. `src`의 HTML·JS·이미지·SCSS를 저장하면 반영됩니다.
 
 ### 배포용 빌드
 
@@ -34,7 +34,7 @@ npm run dev
 npm run build
 ```
 
-`dist/`에 HTML, CSS, JS, 이미지가 출력됩니다. 호스팅에는 `dist/` 내용만 올리면 됩니다.
+`docs/`에 HTML, CSS, JS, 이미지가 출력됩니다. GitHub Pages는 저장소의 `main` 브랜치 `docs/` 폴더를 배포 소스로 지정하면 됩니다.
 
 ## 폴더 구조
 
@@ -49,10 +49,10 @@ src/
     _layout.scss    # 레이아웃
   js/
   images/
-dist/               # 빌드 결과 (git 제외)
+docs/               # 빌드 결과 (GitHub Pages 배포용)
 ```
 
-작업은 **`src/`**에서 하고, **`dist/`**는 생성물이므로 직접 수정하지 않는 것이 좋습니다.
+작업은 **`src/`**에서 하고, **`docs/`**는 생성물이므로 직접 수정하지 않는 것이 좋습니다.
 
 ## 디자인 테마
 

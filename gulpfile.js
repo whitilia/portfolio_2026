@@ -10,19 +10,19 @@ const paths = {
   scss: {
     src: 'src/scss/main.scss',
     watch: 'src/scss/**/*.scss',
-    dest: 'dist/css',
+    dest: 'docs/css',
   },
   html: {
     src: 'src/**/*.html',
-    dest: 'dist',
+    dest: 'docs',
   },
   js: {
     src: 'src/js/**/*.js',
-    dest: 'dist/js',
+    dest: 'docs/js',
   },
   images: {
     src: 'src/images/**/*',
-    dest: 'dist/images',
+    dest: 'docs/images',
   },
 }
 
@@ -55,7 +55,7 @@ function copyImages() {
 function serve() {
   browserSync.init({
     server: {
-      baseDir: 'dist',
+      baseDir: 'docs',
     },
     notify: false,
     open: true,
